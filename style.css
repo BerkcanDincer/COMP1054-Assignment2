@@ -1,0 +1,107 @@
+/* Global Styles */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Layout Styles */
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header,
+footer {
+    background-color: #410c00;
+    color: #fff;
+
+}
+
+main {
+    flex: 1;
+    display: flex;
+}
+
+nav {
+    flex: 0 0 150px;
+    background-color: #e5ac49;
+    padding: 20px;
+}
+
+section {
+    flex: 1;
+    padding: 20px;
+}
+
+aside {
+    flex: 0 0 300px;
+    background-color: #2f3691;
+    padding: 20px;
+}
+
+#about {
+    background-color: #be353b;
+}
+
+#history {
+    background-color: #6f2f79;
+}
+
+#ingredients {
+    background-color: #AEC6CF;
+}
+
+
+/* Table Styles */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #410c00;
+    color: #fff;
+}
+
+/* Mobile Styles */
+@media (max-width: 767px) {
+    body {
+        font-size: 14px;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    nav,
+    aside {
+        flex: 1;
+    }
+}
